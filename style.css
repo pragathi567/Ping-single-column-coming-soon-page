@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    font-family: "Libre Franklin", sans-serif;
+}
+.logo{
+    width:76px;
+}
+.ping-page{
+    position: relative;
+}
+.ping-page h1{
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    font-size: 30px;
+    margin-top:15px;
+}
+.ping-page span{
+    color: black;
+    font-weight: 600;
+}
+.ping-page p{
+    color: hsl(0, 0%, 59%);
+    margin: 12px 0;
+}
+.input-ele{
+    width: 300px;
+    border-radius: 25px;
+    border: 1px solid hsl(223, 100%, 88%);
+    outline: none;
+    height: 40px;
+    padding-left: 8px;
+}
+
+.error-input{
+    border: 1px solid hsl(354, 100%, 66%);
+    width: 300px;
+    border-radius: 25px;
+    outline: none;
+    height: 40px;
+}
+.btn{
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+    border:none;
+    outline: none;
+    border-radius: 25px;
+    font-size: 12px;
+    margin-left:10px;
+    width: 150px;
+    height: 38px;
+    box-shadow: 4px 4px 4px 1px hsl(223, 100%, 88%);
+    cursor: pointer;
+}
+.input-container{
+    display: flex;
+    justify-content: center;
+}
+.first>.error{
+    text-align: left;
+    padding-left: 12px;
+    font-size: 10px;
+    margin-top: 2px;
+    color: hsl(354, 100%, 66%);
+}
+.image{
+    width: 600px;
+    margin-bottom: 10px;
+}
+
+::placeholder {
+    color:hsl(223, 100%, 88%);
+    font-size: 10px;
+    opacity: .5;
+    padding-left: 10px;
+  }
+
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.social-icons i{
+    border: 1px solid hsl(0, 11%, 82%);
+    border-radius: 50%;
+    padding: 8px 10px;
+}
+.icon{
+    color: hsl(223, 87%, 63%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copy{
+    font-size: 12px;
+}
+input[type=email]:focus {
+    border: 2px solid #555;
+  }
+
+.icon:hover{
+    color: #fff;
+    background-color: hsl(223, 87%, 63%);
+    transition: .5s;
+}
+.btn:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+
+@media (max-width:700px){
+    .logo{
+        width: 50px;
+    }
+    .ping-page h1{
+        font-size: 22px;
+    }
+    .ping-page p{
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .input-container{
+        flex-direction: column;
+    }
+    .btn{
+        width: 300px;
+        margin-bottom: 25px;
+        text-align: center;
+        margin-left: 22px;
+    }
+    .image{
+        width: 340px;
+        margin: 32px 0;
+    }
+    .first>.error{
+       padding-left: 32px;
+       text-align: center;
+    }
+    .ping-page>.copy{
+        font-size: 10px;
+    }
+}
